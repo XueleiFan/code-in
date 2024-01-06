@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.centered-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.input-and-output-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#code {
+    border: none;
+    width: 100%;
+    line-height: 150%;
+    white-space: nowrap;
+}
+
+#run-button {
+    border: none;
+    background-color: #eee;
+    color: white;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+#output {
+    font-family: monospace;
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    display: none;
+}
+
+#output-text {
+    white-space: pre-wrap;
+    word-break: break-word;
+    width: 100%;
+    line-height: 150%;
+    overflow: auto;
+    max-height: 360px;
+}
+
+#output.good {
+    background-color: #f0f9eb;
+}
+
+#output.failed {
+    background-color: #f5ebeb;
+}
+
+#output.good::before {
+    content: 'Good';
+    color: #4CAF50;
+    margin-right: 10px;
+}
+
+#output.failed::before {
+    content: 'Failed';
+    color: #F44336;
+    margin-right: 10px;
+}
