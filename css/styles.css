@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
 }
 
 .centered-title {
@@ -85,3 +85,14 @@
     color: #F44336;
     margin-right: 10px;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
